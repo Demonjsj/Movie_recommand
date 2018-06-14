@@ -1,0 +1,32 @@
+/* pages/location/location.wxss */
+
+page {
+  background: white;
+}
+
+.page_location {
+}
+
+.location-map {
+  width: 750rpx;
+  height: 800rpx;
+}
+
+.position {
+  margin-top: 20rpx;
+  font-size: 32rpx;
+  text-align: center;
+}
+
+.coordinate {
+  margin-top: 20rpx;
+  font-size: 25rpx;
+  color: #ccc;
+  text-align: center;
+}
+
+.relocation {
+  background: #1aad19;
+  color: white;
+  margin: 40rpx 80rpx;
+}

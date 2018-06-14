@@ -1,0 +1,67 @@
+<!--pages/editPersonInfo/editPersonInfo.wxml-->
+<view class='page_editPersonInfo'>
+  <form bindsubmit='savePersonInfo'>
+    <view class='editPersonInfo_item'>
+      <text class='info'>姓名</text>
+      <input class='input_info' type='text' placeholder='请输入姓名' placeholder-class='ph_style' value='{{name}}' name="name"></input>
+    </view>
+
+    <view class='editPersonInfo_item'>
+      <text class='info'>昵称</text>
+      <input class='input_info' type='text' placeholder='请输入昵称' placeholder-class='ph_style' value='{{nickname}}' name="nickname"></input>
+    </view>
+
+    <view class='editPersonInfo_item'>
+      <text class='info'>性别</text>
+      <picker bindchange="bindSexPickerChange" value="{{index}}" range="{{sex_array}}">
+        <input class='input_info' type='text' placeholder='请选择性别' placeholder-class='ph_style' value='{{sexSelect}}' disabled='true' name="sexSelect"></input>
+      </picker>
+    </view>
+    <view class='editPersonInfo_item'>
+      <text class='info'>年龄</text>
+      <input class='input_info' type='text' placeholder='请输入年龄' placeholder-class='ph_style' value='{{age}}' name="age"></input>
+    </view>
+
+    <view class='editPersonInfo_item'>
+      <text class='info'>生日</text>
+      <picker mode="date" bindchange="bindTimePickerChange" value="{{date}}" start="1900-09-01" end="2020-09-01">
+        <input class='input_info' type='text' placeholder='请选择生日' placeholder-class='ph_style' value='{{date}}' disabled='true' name="date"></input>
+      </picker>
+    </view>
+
+    <view class='editPersonInfo_item'>
+      <text class='info'>星座</text>
+      <picker bindchange="bindStarPickerChange" value="{{index}}" range="{{star_array}}">
+        <input class='input_info' type='text' placeholder='请选择星座' placeholder-class='ph_style' value='{{starSelect}}' disabled='true' name="starSelect"></input>
+      </picker>
+
+    </view>
+
+    <view class='editPersonInfo_item'>
+      <text class='info'>公司</text>
+      <input class='input_info' type='text' placeholder='请输入公司名' placeholder-class='ph_style' value='{{company}}' name="company"></input>
+    </view>
+
+    <view class='editPersonInfo_item'>
+      <text class='info'>学校</text>
+      <input class='input_info' type='text' placeholder='请输入学校名' placeholder-class='ph_style' value='{{school}}' name="school"></input>
+    </view>
+
+    <view class='editPersonInfo_item'>
+      <text class='info'>手机号码</text>
+      <input class='input_info' type='text' placeholder='请输入手机号码' placeholder-class='ph_style' value='{{phoneNumber}}' name="phoneNumber"></input>
+    </view>
+
+    <view class='editPersonInfo_item'>
+      <text class='info'>邮箱</text>
+      <input class='input_info' type='text' placeholder='请输入邮箱' placeholder-class='ph_style' value='{{email}}' name="email"></input>
+    </view>
+
+    <view class='editPersonInfo_item'>
+      <text class='info'>个性签名</text>
+      <input class='input_info' type='text' placeholder='请输入个性签名' placeholder-class='ph_style' value='{{personSign}}' name="personSign"></input>
+    </view>
+
+    <button class='save' formType="submit">保存</button>
+  </form>
+</view>

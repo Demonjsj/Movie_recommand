@@ -1,0 +1,38 @@
+/* pages/gallery/gallery.wxss */
+@import "../../component/nullTip/nullTip.wxss";
+
+page {
+  background: white;
+}
+
+.page_gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gallery_item {
+  width: 250rpx;
+  height: 250rpx;
+}
+
+.img {
+  width: 250rpx;
+  height: 250rpx;
+  border-bottom: 0.5rpx solid #eee;
+  border-right: 0.5rpx solid #eee;
+}
+
+.button {
+  width: 750rpx;
+}
+
+.upload {
+  margin-top: 50rpx;
+  background: white;
+  width: 200rpx;
+  height: 84rpx;
+  color: #47a86c;
+  line-height: 84rpx;
+  border: 1rpx solid #47a86c;
+  font-size: 30rpx;
+}

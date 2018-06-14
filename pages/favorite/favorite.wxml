@@ -1,0 +1,56 @@
+<!--pages/favorite/favorite.wxml-->
+<view class='page_favorite'>
+  <view class='page_top'>
+    <view>
+      <view class='movie' bindtap='tab_movie'>电影</view>
+      <view class='line' hidden="{{movieTag}}"></view>
+    </view>
+    <view>
+      <view class='person' bindtap='tab_person'>人物</view>
+      <view class='line' hidden="{{personTag}}"></view>
+    </view>
+  </view>
+  <view class='movie_list' hidden="{{movieTag}}">
+    <block wx:if="{{filmDetail == ''}}">
+      <import src='../../component/nullTip/nullTip.wxml' />
+      <template is='nullTip' data='{{nullTipList}}' />
+      <view class='button'>
+        <button class='look' bindtap='gotoLook'>去逛逛</button>
+      </view>
+    </block>
+    <block wx:else>
+      <view class='movie_favorite'>
+        <view class='movie_item' wx:for="{{filmDetail}}" wx:key="filmDetail" bindtap='filmDetail' data-id="{{item.id}}">
+          <image src='{{item.images.large}}' class='movie_img'></image>
+          <view class='movie_info'>
+            <text class='film_name'>{{item.title}}</text>
+            <text class='film_director'>导演：{{item.directors[0].name}}</text>
+            <view class='film_actor'>
+              演员：
+              <block wx:for="{{item.casts}}" wx:key="casts" wx:for-item="itemCasts">
+                <block wx:if="{{itemCasts.name === item.casts[item.casts.length-1].name}}">
+                  <text>{{itemCasts.name}}</text>
+                </block>
+                <block wx:else>
+                  <text>{{itemCasts.name}}/</text>
+                </block>
+              </block>
+            </view>
+            <text class='film_score'>豆瓣评分：{{item.rating.average}}分</text>
+            <text class='film_time'>上映年份：{{item.year}}年</text>
+          </view>
+        </view>
+      </view>
+    </block>
+  </view>
+
+  <view class='movie_list' hidden="{{personTag}}">
+    <block wx:if="{{filmDetail == ''}}">
+      <import src='../../component/nullTip/nullTip.wxml' />
+      <template is='nullTip' data='{{nullTipList:nullTipListPreson}}' />
+      <view class='button'>
+        <button class='look' bindtap='gotoLook'>去逛逛</button>
+      </view>
+    </block>
+  </view>
+</view>

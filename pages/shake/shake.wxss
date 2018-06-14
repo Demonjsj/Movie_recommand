@@ -1,0 +1,61 @@
+/* pages/shake/shake.wxss */
+
+page {
+  background: white;
+}
+
+.page_shake {
+}
+
+.shake_film {
+  display: flex;
+  flex-direction: column;
+}
+
+.film_img {
+  margin: 60rpx auto 20rpx;
+  width: 500rpx;
+  height: 700rpx;
+  box-shadow: 0 60rpx 120rpx rgba(0, 0, 0, 0.4);
+}
+
+.film_name {
+  font-size: 45rpx;
+  margin: 35rpx auto;
+  width: 500rpx;
+  text-align: center;
+}
+
+.film_director {
+  margin-top: 10rpx;
+  font-size: 30rpx;
+  margin-left: 180rpx;
+}
+
+.film_actor {
+  width: 500rpx;
+  margin-top: 10rpx;
+  font-size: 30rpx;
+  margin-left: 180rpx;
+}
+
+.film_access {
+  margin-top: 10rpx;
+  font-size: 30rpx;
+  margin-left: 180rpx;
+}
+
+.film_year {
+  margin-top: 10rpx;
+  font-size: 30rpx;
+  margin-left: 180rpx;
+}
+
+.welcome {
+  width: 750rpx;
+  height: 1334rpx;
+  background-color: #338954;
+  background-size: contain;
+  background-position: center 30%;
+  background-repeat: no-repeat;
+}

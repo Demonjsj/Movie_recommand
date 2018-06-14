@@ -1,0 +1,36 @@
+/* pages/personInfo/personInfo.wxss */
+
+.page_personInfo {
+  margin-top: 20rpx;
+}
+
+.info_item {
+  margin-top: 20rpx;
+  background: white;
+  width: 750rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+}
+
+.info {
+  margin-left: 40rpx;
+  font-size: 32rpx;
+}
+
+.content {
+  margin-right: 40rpx;
+  float: right;
+  font-size: 32rpx;
+  color: #ccc;
+}
+
+.edit {
+  background: #1aad19;
+  width: 300rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  color: white;
+  margin: 40rpx auto;
+  border-radius: 40rpx;
+  font-size: 32rpx;
+}

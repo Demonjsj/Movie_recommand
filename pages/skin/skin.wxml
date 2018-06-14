@@ -1,0 +1,11 @@
+<!--pages/skin/skin.wxml-->
+<view class='page_bg'>
+  <block wx:for="{{skinList}}">
+    <view class='bg_item {{nowSkin == item.imgUrl?"skin-item-active" : ""}}' bindtap='bg_select' data-url='{{item.imgUrl}}'>
+      <image src='{{item.imgUrl}}' class='bg_img'></image>
+      <view class='bg_name'>
+      <text class='bg_txt'>{{item.title}}</text>
+      </view>
+    </view>
+  </block>
+</view>

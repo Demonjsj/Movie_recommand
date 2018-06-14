@@ -1,0 +1,15 @@
+<!--pages/gallery/gallery.wxml-->
+<block wx:if="{{galleryList.length === 0}}">
+  <import src='../../component/nullTip/nullTip.wxml' />
+  <template is="nullTip" data="{{nullTipList}}" />
+</block>
+<block wx:else>
+  <view class='page_gallery'>
+    <view class='gallery_item' wx:for="{{galleryList}}" wx:key="galleryList">
+      <image class='img' src='{{item}}' catchtap='enlargeImg' data-url='{{item}}' data-index='{{index}}' bindlongtap='deleteImg' bindtouchstart='bindtouchstart' bindtouchend='bindtouchend'></image>
+    </view>
+  </view>
+</block>
+<view class='button'>
+  <button class='upload' bindtap='uploadPhoto'>上传</button>
+</view>

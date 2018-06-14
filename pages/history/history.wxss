@@ -1,0 +1,102 @@
+/* pages/history/history.wxss */
+@import '../../component/nullTip/nullTip.wxss';
+
+page {
+  background: #fff;
+}
+
+.page_favorite {
+}
+
+.page_top {
+  display: flex;
+  height: 84rpx;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1rpx solid #eee;
+}
+
+.movie {
+  width: 375rpx;
+  height: 84rpx;
+  line-height: 84rpx;
+  text-align: center;
+  font-size: 30rpx;
+}
+
+.person {
+  width: 375rpx;
+  height: 84rpx;
+  line-height: 84rpx;
+  text-align: center;
+  font-size: 30rpx;
+}
+
+.line{
+  width: 375rpx;
+  height: 5rpx;
+  background: #47a86c;
+}
+
+.button {
+  width: 750rpx;
+}
+
+.look {
+  margin-top: 50rpx;
+  background: white;
+  width: 200rpx;
+  height: 70rpx;
+  color: #47a86c;
+  line-height: 70rpx;
+  border: 1rpx solid #47a86c;
+  font-size: 30rpx;
+}
+
+.movie_favorite {
+}
+
+.movie_item {
+  display: flex;
+  margin-top: 30rpx;
+}
+
+.movie_img {
+  width: 300rpx;
+  height: 420rpx;
+  margin-left: 30rpx;
+}
+
+.movie_info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 40rpx;
+}
+
+.film_name {
+  font-size: 40rpx;
+}
+
+.film_director {
+  font-size: 30rpx;
+  color: #666;
+  margin-top: 20rpx;
+}
+
+.film_actor {
+  font-size: 30rpx;
+  color: #666;
+  margin-top: 20rpx;
+}
+
+.film_score {
+  font-size: 30rpx;
+  color: #666;
+  margin-top: 20rpx;
+}
+
+.film_time {
+  font-size: 30rpx;
+  color: #666;
+  margin-top: 20rpx;
+}

@@ -1,0 +1,9 @@
+<!--pages/systemInfo/systemInfo.wxml-->
+<view class='page_systemInfo'>
+  <block wx:for="{{infoList}}" wx:key="infoList">
+    <view class='info_item'>
+      <text class='modle'>{{item.info}}</text>
+      <text class='name'>{{item.name}}</text>
+    </view>
+  </block>
+</view>

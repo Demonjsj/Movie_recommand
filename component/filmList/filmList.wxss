@@ -1,0 +1,75 @@
+.loading {
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  color: #ccc;
+}
+
+.film {
+  display: flex;
+  flex-wrap: wrap;
+  width: 750rpx;
+}
+
+.film_item {
+  display: flex;
+  flex-direction: column;
+  width: 350rpx;
+  border: 1rpx solid #e5e5e5;
+  border-radius: 10rpx;
+  background: #fff;
+  margin: 10rpx;
+}
+
+.film_top {
+  position: relative;
+  height: 508rpx;
+}
+
+.film_img {
+  width: 100%;
+  z-index: -1;
+  height: 508rpx;
+}
+
+.film_grade {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 99;
+  width: 100%;
+  text-align: right;
+}
+
+.grade_text {
+  color: #fff;
+  font-size: 35rpx;
+  padding: 5rpx;
+}
+
+.film_bottom {
+  padding: 10rpx;
+}
+
+.film_name {
+  display: block;
+  font-size: 30rpx;
+  /* 隐藏 */
+  overflow: hidden;
+  /* 不换行 */
+  white-space: nowrap;
+  /* 最后以...结尾  */
+  text-overflow: ellipsis;
+}
+
+.type_item {
+  border: 1rpx solid #e5e5e5;
+  margin-right: 10rpx;
+  font-size: 25rpx;
+  padding: 5rpx;
+}
+
+.film_type {
+  margin-top: 8rpx;
+}

@@ -1,0 +1,79 @@
+<!--pages/filmDetail/filmDetail.wxml-->
+<view class='page_fileDetail'>
+  <view class='page_top'>
+    <view class='top_left'>
+      <image src="{{filmDetail.images.large}}" class='film_img'></image>
+      <button class='bt_collect' hidden='{{bt_tag}}' bindtap='filmCollect'>收藏</button>
+      <button class='bt_collect_on' hidden='{{!bt_tag}}' bindtap='filmCollectOn'>已收藏</button>
+    </view>
+    <view class='top_right'>
+      <text class='film_name'>{{filmDetail.title}}</text>
+      <text class='film_director'>导演：{{filmDetail.directors[0].name}}</text>
+      <view class='film_actor'>
+        演员：
+        <block wx:for="{{filmDetail.casts}}" wx:key="casts">
+          <block wx:if="{{item.name === filmDetail.casts[filmDetail.casts.length-1].name}}">
+            <text>{{item.name}}</text>
+          </block>
+          <block wx:else>
+            <text>{{item.name}}/</text>
+          </block>
+        </block>
+      </view>
+      <text class='film_score'>豆瓣评分：{{filmDetail.rating.average}}分</text>
+      <text class='film_time'>上映年份：{{filmDetail.year}}年</text>
+    </view>
+  </view>
+  <view class='film_look'>
+    <text class='look_item'>{{filmDetail.reviews_count}}\n看过</text>
+    <view class='line'></view>
+    <text class='look_item'>{{filmDetail.wish_count}}\n想看</text>
+    <view class='line'></view>
+    <text class='look_item'>评分人数\n{{filmDetail.comments_count}}</text>
+  </view>
+
+  <view class='film_bottom'>
+    <view class='film_synopsis'>
+      <view class='synopsis_tag'>
+        <view class='green_line'></view>
+        <text class='txt_synopsis'>剧情简介</text>
+      </view>
+      <view class='synopsis_info'>
+        <text>{{filmDetail.summary}}</text>
+      </view>
+    </view>
+
+    <view class='film_synopsis'>
+      <view class='synopsis_tag'>
+        <view class='green_line'></view>
+        <text class='txt_synopsis'>导演/演员</text>
+      </view>
+      <scroll-view scroll-x='true' class='actor_info'>
+        <view class='actor_info'>
+          <view class='actor_item' wx:for="{{filmDetail.casts}}" wx:key="casts">
+            <image src="{{item.avatars.large}}" class='actor_img'></image>
+            <text class='actor_name'>{{item.name}}</text>
+            <block wx:if="{{item.name === filmDetail.casts[0].name}}">
+              <text class='actor_place'>导演</text>
+            </block>
+            <block wx:else>
+              <text class='actor_place'>演员</text>
+            </block>
+          </view>
+        </view>
+      </scroll-view>
+    </view>
+
+    <view class='film_synopsis'>
+      <view class='synopsis_tag'>
+        <view class='green_line'></view>
+        <text class='txt_synopsis'>标签</text>
+      </view>
+      <view class='tag_info'>
+        <block wx:for="{{filmDetail.genres}}" wx:key="genres">
+          <text class="type_item">{{item}}</text>
+        </block>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,68 @@
+{
+  "pages": [
+    "pages/popular/popular",
+    "pages/coming/coming",
+    "pages/top/top",
+    "pages/search/search",
+    "pages/filmDetail/filmDetail",
+    "pages/personDetail/personDetail",
+    "pages/searchResult/searchResult",
+    "pages/my/my",
+    "pages/favorite/favorite",
+    "pages/history/history",
+    "pages/shake/shake",
+    "pages/gallery/gallery",
+    "pages/setting/setting",
+    "pages/skin/skin",
+    "pages/personInfo/personInfo",
+    "pages/editPersonInfo/editPersonInfo",
+    "pages/systemInfo/systemInfo",
+    "pages/about/about",
+    "pages/location/location"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#47a86c",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#686868",
+    "selectedColor": "#47a86c",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/popular/popular",
+        "text": "热映",
+        "iconPath": "/images/popular_icon.png",
+        "selectedIconPath": "/images/popular_active_icon.png"
+      },
+      {
+        "pagePath": "pages/coming/coming",
+        "text": "待映",
+        "iconPath": "/images/coming_icon.png",
+        "selectedIconPath": "/images/coming_active_icon.png"
+      },
+      {
+        "pagePath": "pages/top/top",
+        "text": "口碑",
+        "iconPath": "/images/top_icon.png",
+        "selectedIconPath": "/images/top_active_icon.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "/images/my_icon.png",
+        "selectedIconPath": "/images/my_active_icon.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 20000,
+    "connectSocket": 20000,
+    "uploadFile": 20000,
+    "downloadFile": 20000
+  },
+  "debug":true
+}

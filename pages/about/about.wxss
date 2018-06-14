@@ -1,0 +1,46 @@
+/* pages/about/about.wxss */
+page {
+    width: 100%;
+    height: 100%;
+    background: white;
+}
+
+view {
+    width: 100%;
+}
+
+.weapp-about {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.weapp-name {
+    font-size: 60rpx;
+    text-align: center;
+    color: #555;
+    margin-top: 30rpx;
+}
+
+.webapp-intro {
+    box-sizing: border-box;
+    padding:30rpx;
+    height: 900rpx;
+}
+
+.webapp-intro-item {
+    margin-bottom: 40rpx;
+}
+
+.webapp-intro-title {
+    margin-bottom: 10rpx;
+    font-size: 32rpx;
+    color: #666;
+}
+
+.webapp-intro-content {
+    color: #ccc;
+    font-size: 28rpx;
+}

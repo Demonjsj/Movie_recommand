@@ -1,0 +1,10 @@
+<!--pages/personInfo/personInfo.wxml-->
+<view class='page_personInfo'>
+  <block wx:for="{{personInfoList}}" wx:key="personInfoList">
+    <view class='info_item'>
+      <text class='info'>{{item.info}}</text>
+      <text class='content'>{{item.content}}</text>
+    </view>
+  </block>
+  <button class='edit' bindtap='editPersonInfo'>编辑</button>
+</view>

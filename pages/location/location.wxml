@@ -1,0 +1,7 @@
+<!--pages/location/location.wxml-->
+<view class='page_location'>
+  <map longitude="{{longitude}}" latitude="{{latitude}}" class='location-map'></map>
+  <view class='position'>您的当前位置在：{{position}}</view>
+  <view class='coordinate'>gps坐标：经度({{longitude}}),纬度({{latitude}})</view>
+  <button class='relocation' bindtap='relocation'>重新定位</button>
+</view>

@@ -1,0 +1,137 @@
+{
+	"description": "项目配置文件。",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "1.9.98",
+	"appid": "wxaadc9d12c50a0ec2",
+	"projectname": "movie_recommand_new_v0.8",
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": -1,
+					"name": "coming",
+					"pathName": "pages/coming/coming",
+					"query": ""
+				},
+				{
+					"id": 1,
+					"name": "top",
+					"pathName": "pages/top/top",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "filmDetail",
+					"pathName": "pages/filmDetail/filmDetail",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "my",
+					"pathName": "pages/my/my",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "skin",
+					"pathName": "pages/skin/skin",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "gallery",
+					"pathName": "pages/gallery/gallery",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "setting",
+					"pathName": "pages/setting/setting",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "systemInfo",
+					"pathName": "pages/systemInfo/systemInfo",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "location",
+					"pathName": "pages/location/location",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "personInfo",
+					"pathName": "pages/personInfo/personInfo",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "editPersonInfo",
+					"pathName": "pages/editPersonInfo/editPersonInfo",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "favorite",
+					"pathName": "pages/favorite/favorite",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "shake",
+					"pathName": "pages/shake/shake",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "searchResult",
+					"pathName": "pages/searchResult/searchResult",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "search",
+					"pathName": "pages/search/search",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "history",
+					"pathName": "pages/history/history",
+					"query": ""
+				}
+			]
+		}
+	}
+}

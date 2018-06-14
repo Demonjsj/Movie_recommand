@@ -1,0 +1,18 @@
+<!--pages/popular/popular.wxml-->
+<view class="page_popular">
+  <view class="search">
+    <icon type="search" size="12" class="icon_search" />
+    <input type="text" placeholder="请输入关键词搜索" placeholder-class="search_text_plc" class="search_text" bindtap='searchFilm'/>
+  </view>
+
+  <swiper indicator-dots="true" autoplay="true" interval="3000" duration="500">
+    <block wx:for-items="{{bannerList}}" wx:key="bannerList">
+      <swiper-item data-id="{{item.id}}" bindtap='banner_detail' data-type="{{item.type}}">
+        <image src="{{item.imgUrl}}" class="slide_image" />
+      </swiper-item>
+    </block>
+  </swiper>
+
+  <import src="../../component/filmList/filmList.wxml" />
+  <template is="filmList" data="{{filmList:filmList}}" />
+</view>

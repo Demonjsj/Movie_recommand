@@ -1,0 +1,43 @@
+<template name="filmList">
+  <block wx:if="{{showLoading}}">
+    <view class='loading'>玩命加载中..</view>
+  </block>
+  <block wx:else>
+    <view class="film">
+      <block wx:for="{{filmList}}" wx:key="film">
+        <view class="film_item" bindtap='filmDetail' data-id='{{item.id}}'>
+          <view class="film_top">
+            <image src="{{item.images.large}}" class="film_img"></image>
+            <view class="film_grade">
+              <block wx:if="{{item.rating.average == 0}}">
+                <text class="grade_text">暂无评分</text>
+              </block>
+              <block wx:else>
+                <block wx:if="{{(item.rating.average)%1 === 0}}">
+                  <text class="grade_text">{{item.rating.average}}.0分</text>
+                </block>
+                <block wx:else>
+                  <text class="grade_text">{{item.rating.average}}分</text>
+                </block>
+              </block>
+            </view>
+          </view>
+          <view class="film_bottom">
+            <text class="film_name">{{item.title}}</text>
+            <view class="film_type">
+              <block wx:for="{{item.genres}}" wx:key="filmTag">
+                <text class="type_item">{{item}}</text>
+              </block>
+            </view>
+          </view>
+        </view>
+      </block>
+      <block wx:if="{{hasMore}}">
+        <view class='loading'>拼命加载中..</view>
+      </block>
+      <block wx:else>
+        <view class='loading'>没有更多内容了</view>
+      </block>
+    </view>
+  </block>
+</template>

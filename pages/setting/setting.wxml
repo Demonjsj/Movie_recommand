@@ -1,0 +1,9 @@
+<!--pages/setting/setting.wxml-->
+<view class='page_setting'>
+  <block wx:for="{{optionList}}" wx:key="optionList">
+    <view class='personInfo' data-tag='{{item.tag}}' bindtap='optionClick'>
+      <text class='text'>{{item.name}}</text>
+      <image src='/images/right.png' class='img'></image>
+    </view>
+  </block>
+</view>

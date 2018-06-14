@@ -1,0 +1,6 @@
+<template name="nullTip">
+  <view class='page_nothing' wx:for="{{nullTipList}}">
+    <image src='{{item.img}}' class='img_nothing'></image>
+    <text class='txt_nothing'>{{item.text}}</text>
+  </view>
+</template>

@@ -1,0 +1,24 @@
+/* pages/systemInfo/systemInfo.wxss */
+
+.page_systemInfo {
+  margin-top: 20rpx;
+}
+
+.info_item {
+  background: white;
+  width: 670rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  border-bottom: 1rpx solid #eee;
+  padding: 0 40rpx;
+}
+
+.modle {
+  font-size: 35rpx;
+}
+
+.name {
+  float: right;
+  font-size: 35rpx;
+  color: #ccc;
+}

@@ -1,0 +1,3 @@
+<!--pages/top/top.wxml-->
+<import src="../../component/filmList/filmList.wxml"/>
+<template is="filmList" data="{{filmList}}"/>

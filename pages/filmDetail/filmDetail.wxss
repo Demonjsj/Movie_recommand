@@ -1,0 +1,185 @@
+/* pages/filmDetail/filmDetail.wxss */
+
+.page_fileDetail {
+}
+
+.page_top {
+  display: flex;
+  width: 750rpx;
+  height: 530rpx;
+  padding-top: 70rpx;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.top_left {
+  display: flex;
+  flex-direction: column;
+  width: 375rpx;
+  padding-left: 40rpx;
+}
+
+.film_img {
+  width: 300rpx;
+  height: 420rpx;
+  border-radius: 10rpx;
+}
+
+.bt_collect {
+  margin-top: 20rpx;
+  line-height: 56rpx;
+  border: 1rpx solid #fff;
+  border-radius: 40rpx;
+  font-size: 30rpx;
+  text-align: center;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0);
+  margin-right: 150rpx;
+}
+
+.bt_collect_on{
+  margin-top: 20rpx;
+  line-height: 56rpx;
+  border: 1rpx solid #E2DA4A;
+  border-radius: 40rpx;
+  font-size: 30rpx;
+  text-align: center;
+  color: #E2DA4A;
+  background-color: rgba(0, 0, 0, 0);
+  margin-right: 130rpx;
+}
+
+.top_right {
+  display: flex;
+  flex-direction: column;
+  width: 375rpx;
+}
+
+.film_name {
+  color: #fff;
+  font-size: 42rpx;
+  margin-bottom: 20rpx;
+}
+
+.film_director {
+  color: #fff;
+  font-size: 30rpx;
+  margin-bottom: 10rpx;
+}
+
+.film_actor {
+  color: #fff;
+  font-size: 30rpx;
+  margin-bottom: 10rpx;
+}
+
+.film_score {
+  color: #fff;
+  font-size: 30rpx;
+  margin-bottom: 10rpx;
+}
+
+.film_time {
+  color: #fff;
+  font-size: 30rpx;
+  margin-bottom: 10rpx;
+}
+
+.film_look {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 152rpx;
+  background: #fff;
+  border-bottom: 1rpx solid #eee;
+}
+
+.look_item {
+  width: 33.3%;
+  text-align: center;
+  color: #999;
+  font-size: 30rpx;
+}
+
+.line {
+  width: 1rpx;
+  height: 70rpx;
+  background: #eee;
+}
+
+.film_bottom {
+  background: white;
+}
+
+.film_synopsis {
+  padding: 40rpx 40rpx 0 40rpx;
+}
+
+.synopsis_tag {
+  display: flex;
+}
+
+.green_line {
+  width: 10rpx;
+  height: 40rpx;
+  background: #47a86c;
+}
+
+.txt_synopsis {
+  margin-left: 20rpx;
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #444;
+}
+
+.synopsis_info {
+  line-height: 45rpx;
+  margin-top: 20rpx;
+  font-size: 30rpx;
+  color: #666;
+}
+
+.actor_info {
+  display: flex;
+}
+
+.actor_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 280rpx;
+  height: 470rpx;
+  margin: 20rpx 10rpx 0 0;
+}
+
+.actor_img {
+  width: 280rpx;
+  height: 400rpx;
+}
+
+.actor_name {
+  font-size: 35rpx;
+  color: #666;
+  margin-top: 10rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.actor_place {
+  font-size: 30rpx;
+  color: #666;
+}
+
+.tag_info {
+  margin-top: 20rpx;
+  padding-bottom: 40rpx;
+}
+
+.type_item {
+  border: 1rpx solid #e5e5e5;
+  margin-right: 10rpx;
+  font-size: 30rpx;
+  padding: 5rpx;
+  color: #666;
+  border-radius: 10rpx;
+}

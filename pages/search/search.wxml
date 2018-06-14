@@ -1,0 +1,33 @@
+<!--pages/search/search.wxml-->
+<view class='page_search'>
+  <view class='search_top'>
+    <form bindsubmit='search'>
+      <view class='search_type' bindtap='changeType'>{{searchType == 'keyword'?'默认':'类型'}}</view>
+      <input type='text' name="keyword" placeholder="{{searchType == 'keyword'?'请输入电影标题、演员或导演 ':'请输入影片类型，如：爱情、喜剧 '}}" placeholder-class='ph_style' class='search_input'></input>
+      <button class='bt_search' form-type='submit'>搜索</button>
+    </form>
+  </view>
+
+  <view class='view_bot'>
+    <view class='synopsis_tag'>
+      <view class='green_line'></view>
+      <text class='txt_synopsis'>热门搜索</text>
+    </view>
+    <view class='hot_search'>
+      <block wx:for="{{hotKeyword}}" wx:key="hotKeyword">
+        <text class='hot_item' bindtap='searchLink' data-keyword='{{item}}'>{{item}}</text>
+      </block>
+    </view>
+    <view class='hot_tag'>
+      <view class='green_line'></view>
+      <text class='txt_synopsis'>热门标签</text>
+    </view>
+    <view class='hot_search'>
+      <block wx:for="{{hotTag}}" wx:key="hotTag">
+        <text class='hot_item' bindtap='tagLink' data-keyword='{{item}}'>{{item}}</text>
+      </block>
+    </view>
+  </view>
+
+
+</view>

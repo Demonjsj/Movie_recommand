@@ -1,0 +1,19 @@
+.page_nothing{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 300rpx;
+
+}
+
+.img_nothing{
+  width: 150rpx;
+  height: 150rpx;
+}
+
+.txt_nothing{
+  margin-top: 100rpx;
+  font-size: 30rpx;
+  color: #999999;
+}

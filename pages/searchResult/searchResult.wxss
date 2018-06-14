@@ -1,0 +1,7 @@
+/* pages/searchResult/searchResult.wxss */
+@import '../../component/filmList/filmList.wxss';
+@import '../../component/nullTip/nullTip.wxss';
+
+page{
+  background: white
+}
